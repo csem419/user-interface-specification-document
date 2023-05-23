@@ -1,0 +1,62 @@
+# User Management Screen - User Interface Specification
+
+## Requirements
+
+The user management screen is a part of the application's admin module and is used to manage user accounts. The following requirements should be fulfilled:
+
+1. Display a list of all users with their relevant details.
+2. Allow administrators to add new users.
+3. Allow administrators to edit existing user details.
+4. Allow administrators to delete user accounts.
+5. Provide search and filtering capabilities to find specific users.
+6. Implement pagination to handle a large number of users efficiently.
+
+## User Interface Components
+
+### User List
+
+- Display a table listing all users.
+- Columns: User ID, Name, Email, Role, Last Login, Actions.
+- The table should be sortable by each column.
+- Provide a search input field to search for users by name or email.
+- Include pagination controls to navigate through the user list.
+
+### User Details Modal
+
+- Opened when adding a new user or editing an existing user.
+- Contains input fields for the following user details: Name, Email, Password, Role.
+- Include validation for input fields (e.g., required fields, email format).
+- Show appropriate error messages if validation fails.
+- Save and Cancel buttons to perform the corresponding actions.
+
+### Delete User Confirmation Modal
+
+- Prompted when deleting a user account.
+- Display a confirmation message with the user's name.
+- Include a Cancel button to cancel the delete action.
+- Include a Delete button to confirm the delete action.
+
+## Initial Page Display
+
+- On initial page load, fetch and display a paginated list of users.
+- Show a loading indicator while the user data is being fetched.
+- Provide a "Refresh" button to manually reload the user list.
+- Include an "Add User" button to open the User Details Modal for adding a new user.
+
+## User Interface Behavior
+
+- Clicking on a column header in the user list table should sort the table based on that column.
+- Typing in the search input field should dynamically filter the user list based on the entered text.
+- Clicking on a user row in the user list should open the User Details Modal for editing the selected user.
+- Clicking the "Add User" button should open the User Details Modal for adding a new user.
+- Clicking the "Save" button in the User Details Modal should save the user details and update the user list.
+- Clicking the "Delete" button in the Delete User Confirmation Modal should delete the selected user account.
+- Pagination controls should allow navigating through different pages of the user list.
+
+---
+
+This concludes the user interface specification for the user management screen. Developers can refer to this document while implementing the user interface. Remember to include appropriate styling and responsive design principles for optimal user experience.
+
+Please note that you will need to save the content as a Markdown file and manually upload it to your preferred repository.
+
+Let me know if there's anything else I can assist you with!
